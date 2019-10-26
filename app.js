@@ -1,6 +1,7 @@
 const mainForm = document.querySelector('#main-form');
 const input = document.querySelector('#input');
 const output = document.querySelector('#output');
+const resetBtn = document.querySelector('#reset-btn');
 
 const alphabet = {
   а: 'a',
@@ -73,3 +74,13 @@ mainForm.addEventListener('submit', e => {
 function capitalize(word) {
   return word[0].toUpperCase() + word.slice(1);
 }
+
+resetBtn.addEventListener('click', () => {
+  if (confirm('Do you really want to reset inputs?')) {
+    input.value = '';
+    input.style.height = '60px';
+
+    output.value = '';
+    output.style.height = '60px';
+  }
+});
