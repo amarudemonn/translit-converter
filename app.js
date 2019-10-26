@@ -78,9 +78,9 @@ function capitalize(word) {
 resetBtn.addEventListener('click', () => {
   if (confirm('Do you really want to reset inputs?')) {
     input.value = '';
-    input.style.height = '60px';
+    input.style.height = '62px';
 
     output.value = '';
-    output.style.height = '60px';
+    output.style.height = '62px';
   }
 });
