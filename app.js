@@ -76,7 +76,7 @@ function capitalize(word) {
 }
 
 resetBtn.addEventListener('click', () => {
-  if (confirm('Do you really want to reset inputs?')) {
+  if (confirm('Do you really want to reset fields?')) {
     input.value = '';
     input.style.height = '62px';
 
